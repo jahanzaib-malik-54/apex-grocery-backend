@@ -48,6 +48,11 @@ app.use('/admin',adminRouter)
 app.use('/category',categoryRouter)
 // app.use('/order',orderRouter)
 
+app.get('/', (req, res) => {
+  res.send('Hello from Express on Vercel!');
+});
+
+
 
 app.use('/uploads', express.static(path.join(__dirname, './uploads')));
 
