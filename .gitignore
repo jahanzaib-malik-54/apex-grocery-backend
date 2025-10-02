@@ -1,0 +1,63 @@
+# Node.js dependencies
+/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build output
+/dist/
+/build/
+
+# Dependency directories for yarn or npm (if using package-lock or yarn.lock)
+package-lock.json
+yarn.lock
+
+# OS-specific files
+.DS_Store  # macOS specific file
+Thumbs.db  # Windows specific file
+
+# IDE and editor files
+.vscode/launch.json
+.idea/
+
+# Optional: Ignore the test coverage directory if you're using a tool like NYC for code coverage
+/coverage/
+
+# Ignore the npm or yarn folder if you use a custom directory for global packages
+.npm/
+
+# Ignore config files related to local development tools like:
+*.sublime-workspace
+*.sublime-project
+
+# Ignore test results (if using Mocha, Jest, or any testing framework)
+test-results/
+
+# Ignore logs from tools such as pm2 (Process Manager for Node.js)
+pm2-log/
+
+# Ignore sensitive or private configuration files
+config.json
+
+# Ignore compiled template files or view caches
+/views_cache/
+
+# Ignore temporary or backup files created by the editor
+*~
+
+# Ignore .env files for storing private credentials or API keys
+.env.local
+.env.development
+.env.production
+.env.test
+
+
+# ignore vercel folder
+.vercel
+vercel.json
