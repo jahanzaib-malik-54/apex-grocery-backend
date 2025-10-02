@@ -7,6 +7,7 @@ const isDevelopment = nodeEnv === 'development';
 
 export const ACCESS_TOKEN_EXPIRY = '25m';
 export const REFRESH_TOKEN_EXPIRY = '7d';
+export const isProduction = process.env.NODE_ENV === 'production';
 
 export const accessTokenSecret = process.env.ACCESS_TOKEN_SECRET;
 export const refreshTokenSecret = process.env.REFRESH_TOKEN_SECRET;
@@ -23,7 +24,7 @@ export const s3BaseURL = `https://${s3BucketName}.s3.${awsRegion}.amazonaws.com/
 
 export const APP_PACKAGE_NAME = 'com.td.apexGrocery';
 
-export const prodApiUrl = 'https://apex-grocery-v1.vercel.app';
+export const prodApiUrl = 'https://apex-grocery-backend.vercel.app';
 
 export const openApexGroceryAppLink = prodApiUrl + '/open-app/open-apex-grocery-v1.vercel.app';
 
